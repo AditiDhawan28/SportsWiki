@@ -1,0 +1,296 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Aclonica';
+    font-size: 15px;
+    background-image: url(basketball.jpg);
+    background-repeat:no-repeat ;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.header{
+    width:100%;
+    
+    color:rgb(8, 8, 8);
+    padding:10px;
+    margin-bottom: 10px;
+}
+.heading{
+    text-align: left;
+    margin:8px;
+    padding:5px;
+    width:auto;
+    border-radius: 5px;
+    position:absolute;
+}
+.heading1{
+    text-align: left;
+    margin:8px;
+    padding:5px;
+    background-color:white;
+    width:auto;
+    color:rgb(22, 20, 20);
+    border-radius: 5px;
+    position:absolute;
+}
+.right{
+    width: 100%;
+    color: white;
+    height: 83%;
+    border-radius: 15px;
+    margin-right: 14px;
+}
+.left{
+    width: 99%;
+    color: white;
+    border-radius: 5px;
+    margin-left: 15px;
+    height: 68vh;
+   
+}
+.livematches{
+    width: 48%;
+    height: 450px;
+    text-align: center;
+    overflow: scroll;
+    float: left;
+}
+.text{
+    border-left: 5px solid
+    margin-top: 55px;
+    word-spacing: 5px;
+}
+/*.teamspointable{
+    float:left;
+    width:65%;
+    background-color:black;
+    border-radius: 15px;
+    color:white;
+    height:100%;
+    text-align: center;
+    overflow: scroll;
+    box-shadow: 5px 5px 5px 5px rgba(15, 15, 15, 0.2);
+    border:1.9px solid white;
+}*/
+
+.team1{
+    width:48%;
+    float: left;
+    border-radius: 15px;
+    height:100%;
+    margin-left: 10px;
+    
+    text-align: center;
+    overflow: scroll;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(15, 15, 15, 0.2);
+}
+.team2{
+    width:48%;
+    float:right;
+    margin-right: 10px;
+    border-radius: 15px;
+    height:100%;
+    text-align: center;
+    overflow: scroll;
+    box-shadow: 5px 5px 5px 5px rgba(14, 11, 11, 0.2);
+}
+
+
+table,tr,th{
+    margin-top:90px;
+      border:collapse;
+      color:white;
+      padding:15px auto;   
+      margin-left:10px;
+      margin-right:10px;  
+      font-size: 13px; 
+}
+th{
+    text-align: center;
+    width:6%;
+    border-top-left-radius: 1px;
+    position: relative;
+}
+td{text-align: center;}
+tr{
+    border-bottom: 1px solid white;
+    height:40px;
+ 
+}
+
+/*.btables{
+    margin-top:65px;
+    border:1.9px solid white;
+    margin-left:10px;
+    margin-right: 10px;
+    width:90%;
+    height:auto;
+}*/
+.stats{
+    width: 30%;
+    height: 450px;
+    text-align: center;
+    overflow: scroll;
+    box-shadow: 0 15px 15px 0 rgb(15 15 15 / 20%);
+    float: left;
+    margin-left: 1%;
+   
+}
+.newsheadlines{
+    float: right;
+    width: 48%;
+    height: 450px;
+    text-align: center;
+    overflow: scroll;
+    box-shadow: 0 15px 15px 0 rgb(15 15 15 / 20%);
+    margin-right: 2%;
+   
+}
+.Pgallery{
+    margin-top: 10px;
+    width:auto;
+    background-color:black;
+    border-radius: 15px;
+    height:355px;
+    text-align: center;
+    overflow: scroll;
+    box-shadow: 0 15px 15px 0 rgba(15, 15, 15, 0.2);
+}
+
+.footer1{
+    width:100%;
+    height:30px;
+    float:right;
+    border-radius: 5px;
+    margin:45px 0px;
+    color:white;
+    text-align: center;
+}
+ul li{
+    display: inline;
+    margin:5px;
+    color:white;
+}
+ul li a{
+    color:white;
+}
+@media screen and (max-width:1120px){
+    .main{
+        display: grid;
+        grid-template-areas:'header header header header header header'
+                        'left left left left left left'   
+                        'right right right right right right'
+                        'footer footer footer footer footer footer';
+    margin:45px;
+    }
+    .right{
+        margin-top: 5px;
+    }
+}
+@media screen and (max-width:770px){
+    .main{
+        display: grid;
+        grid-template-areas:'header header header header header header'
+                        'left left left left left left'   
+                        'right right right right right right'
+                        'footer footer footer footer footer footer';                
+    margin:5px;
+    
+    }
+    .right{
+        margin-top:10px;
+        width:100%;
+        padding:0px;
+    }
+    .teamspointable{
+        width:100%;
+        height:auto;
+    }
+    .team1{
+        display: block;
+        float:left;
+        width:100%;
+        height:auto;
+        margin-top: 10px;
+        margin-right: 9px;
+        float:right;
+    }
+    .team2{
+        display:block;
+        width:100%;
+        height:auto;
+        margin-top: 10px;
+        margin-right: 9px;
+    }
+    footer1{
+        margin-top: 85vh;
+    }
+}
+
+.leftside{
+float: left;
+width: 30%;
+margin-left: 1%;
+}
+
+.rightside{
+float: right;
+width: 30%;
+margin-left: 1%;
+}
+
+.imgs{
+ border-radius: 50%;
+    margin: 6px;
+    margin-bottom: 0px;
+
+}
+
+.div-size{
+width: 100%;
+}
+
+.bgcolor{
+  background-color: #ffffff;
+}
+
+.head {
+  width: 99%;
+  margin-left: 8px;
+}
+
+.head button{
+  margin: 20px 0px 20px 0px;
+}
+
+.head button:hover{
+  background-color: grey;
+}
+
+div.leaguestypes{
+  margin: 4px, 4px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.b1{
+background-color: #00000085;
+}
+
+.text-color{
+color:burlywood;
+}
+
+.b2{
+background-color: #d9c452;
+}

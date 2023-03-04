@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{%static 'home/games/home.css' %}">
+    <!--    <link rel="stylesheet" type="text/css" href="{%static 'home/games/trivia2.css' %}">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+    <title>Sport Trivia</title>
+
+</head>
+<body>
+    <div class="containers">
+        <div class="rows ml-5">
+            <div class="col-3 shadow-lg ml-5 bg-white mt-4 round cols">
+                <a href="{% url 'trivia' %}">
+                    <img class="trivia round" src="{%static 'home/games/Trivia/trivia.jpg' %}"
+                                     alt="Los Angeles">
+                </a>
+            </div>
+            <div class="col-3 shadow-lg ml-5 mt-4 bg-white round cols">
+                <a href="{% url 'BasketBallGame' %}">
+                    <img class="trivia round" src="{%static 'home/games/BasketBall/images/basketballgame.webp' %}"
+                                     alt="Los Angeles">
+                </a>
+            </div>
+            <div class="col-3 shadow-lg ml-5 mt-4 bg-white round cols">
+                <a href="{% url 'chess' %}">
+                    <img class="trivia round" src="{%static 'home/games/Chess/chess.png' %}"
+                                     alt="Los Angeles">
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+<!--<script src="{%static 'home/games/trivia.BasketBallGameJs' %}"></script>-->
+</html>
